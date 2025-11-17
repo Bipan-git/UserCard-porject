@@ -1,11 +1,12 @@
 import React from "react";
+import "./UserCard.css";
 
-export default function UserCard({ name, age, showDetails }) {
+export default function UserCard({ user }) {
   return (
     <div className="user-card">
-      <h2>{name}</h2>
-
-      {showDetails && <p>Age: {age}</p>}
+      <img src="user.image" alt="profile" />
+      <h3>{user.name}</h3>
+      <p>{user.email}</p>
     </div>
   );
 }

@@ -1,0 +1,14 @@
+.app-container {
+  text-align: center;
+  padding: 20px;
+  font-family: Poppins, sans-serif;
+  color: aqua;
+}
+
+.user-card {
+  background: #f4f4f4;
+  padding: 15px;
+  margin: 20px auto;
+  width: 300px;
+  border-radius: 10px;
+}

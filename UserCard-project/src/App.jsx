@@ -1,28 +1,26 @@
-import React, { useState } from "react";
-import UserCard from "./assets/component/UserCard";
+import React from "react";
+import UserList from "./assets/component/UserList";
 import "./App.css";
 
 export default function App() {
-  const [name, setName] = useState("Bipan");
-  const [age] = useState(20);
-  const [showDetails, setShowDetails] = useState(false);
-
-  const toggleDetails = () => {
-    setShowDetails(!showDetails);
-  };
-  const handleChangeName = () => {
-    setName("Mr.Devloper");
-  };
-
+  const users = [
+    {
+      name: "Bipan",
+      email: "bipangurung1124@pcmgmt.edu.np",
+      Image:
+        "https://ui-avatars.com/api/?name=Bipan&background=0D8ABC&color=fff&size=150",
+    },
+    {
+      name: "ALex",
+      email: "Alex1124@pcmgmt.edu.np",
+      Image:
+        "https://ui-avatars.com/api/?name=Bipan&background=0D8ABC&color=fff&size=150",
+    },
+  ];
   return (
-    <div className="app-container">
-      <h1>User DashBoard</h1>
-      <UserCard name={name} age={age} showDetails={showDetails} />
-      <button onClick={toggleDetails}>
-        {showDetails ? "hide Details" : "show Details"}{" "}
-      </button>
-
-      <button onClick={handleChangeName}>change Name </button>
+    <div className="container">
+      <h1>users Board</h1>
+      <UserList users={users} />
     </div>
   );
 }
