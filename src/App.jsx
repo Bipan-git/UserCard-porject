@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import UserList from "./assets/component/UserList";
 import "./App.css";
 
 export default function App() {
+  const [count, setCount] = useState(0);
   const users = [
     {
       name: "Bipan",
@@ -21,6 +22,8 @@ export default function App() {
     <div className="container">
       <h1>users Board</h1>
       <UserList users={users} />
+      <h1>{count}</h1>
+      <button onClick={() => setCount(count + 1)}>Increase number</button>
     </div>
   );
 }
