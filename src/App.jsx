@@ -22,8 +22,15 @@ export default function App() {
     <div className="container">
       <h1>users Board</h1>
       <UserList users={users} />
-      <h1>{count}</h1>
-      <button onClick={() => setCount(count + 1)}>Increase number</button>
+      <h1 > <center>{count}</center></h1>
+      <div className="btn">
+        <button className="btn-1" onClick={() => setCount(count + 1)}>
+          Increase number
+        </button>
+        <button className="btn-2" onClick={() => setCount(0)}>
+          Reset
+        </button>
+      </div>
     </div>
   );
 }
