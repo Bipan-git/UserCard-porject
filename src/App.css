@@ -29,3 +29,19 @@
       sans-serif;
   }
 }
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  display: flex;
+  padding: 10px;
+  height: 40px;
+}
+.btn-1 {
+  margin-right: 10px;
+}
+btn-2 {
+  margin-left: 10px;
+}
