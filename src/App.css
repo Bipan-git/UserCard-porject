@@ -12,3 +12,20 @@
   width: 300px;
   border-radius: 10px;
 }
+@media (max-width: 600px) {
+  /* .user-card {
+    flex: 1 1 100%;
+  } */
+  /* body{
+    background-color: aqua;
+  } */
+  .container {
+    height: 50px;
+    width: 50px;
+  }
+  body {
+    font-size: small;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+}
